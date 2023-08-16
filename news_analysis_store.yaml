@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: news-aanalysis-cronjob
+spec:
+  schedule: "*/20 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: news-analysis-container
+            image: 192.168.49.2:32770/analyze_data:latest
+          restartPolicy: OnFailure

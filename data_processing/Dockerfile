@@ -9,8 +9,8 @@ COPY requirements.txt .
 # Install any dependencies (for Python, you would have a requirements.txt)
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy your application code into the container
+# Copy application code into the container
 COPY . .
 
-# Command to run your script (replace with your actual command)
-CMD ["python", "news_ingestion_script.py"]
+# run command
+CMD ["python", "news_analysis_script.py"]

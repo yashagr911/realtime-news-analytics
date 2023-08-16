@@ -9,8 +9,8 @@ COPY requirements.txt .
 # Install any dependencies (for Python, you would have a requirements.txt)
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy your application code into the container
+# Copy the application code into the container
 COPY . .
 
-# Command to run your script (replace with your actual command)
+# Command to run the script
 CMD ["python", "fetch_and_send_news_to_eventhub.py"]
