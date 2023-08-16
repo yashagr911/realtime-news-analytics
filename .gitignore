@@ -1,0 +1,3 @@
+# .gitignore
+data_processing/config.json
+data_ingestion/config.json

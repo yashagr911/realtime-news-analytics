@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: news-ingestion-cronjob
+spec:
+  schedule: "*/20 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: news-ingestion-container
+            image: 192.168.49.2:32770/ingest_data:latest
+          restartPolicy: OnFailure
