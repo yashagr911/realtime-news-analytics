@@ -31,7 +31,7 @@ This project aims to provide a real-time news analytics pipeline that continuous
    git clone https://github.com/yourusername/real-time-news-analytics.git
    cd real-time-news-analytics
    ```
-2. Setup Azure Event hubs, Azure CosmosDB
+2. Setup Azure Event hubs, Azure CosmosDB and NewsAPI.
 
 ## Configuration
 
