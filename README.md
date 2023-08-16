@@ -65,6 +65,8 @@ This project aims to provide a real-time news analytics pipeline that continuous
  - Just apply the prometheus_config.yaml file and check for the post in which Grafana is running.
     ```bash
     kubectl apply -f prometheus_config.yaml
+    kubectl get pods --wide
+
     ```
  - use the hostname:port to access Grafana.
  - use promql queries to access prometheus data and add it to your custom dashboards. 
