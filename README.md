@@ -54,10 +54,17 @@ This project aims to provide a real-time news analytics pipeline that continuous
     ```
 3. Either push to dockerhub or push to minikube registry locally.
 4. Run the minikube cluster, apply the news_injest_cronjob.yaml and news_analysis_store.yaml files.
+    ```bash
+    kubectl apply -f news_injest_cronjob.yaml
+    kubectl apply -f news_analysis_store.yaml
+    ```
 5. Everything is done. Enjoy!
 
 ## Monitoring with Prometheus and Grafana
  - Additionally, some metrics like number of requests, number of positive sentiments, etc are exposed to prometheus. 
- - Just apply the Prometheus_config.yaml file and check for the post in which Grafana is running..
+ - Just apply the prometheus_config.yaml file and check for the post in which Grafana is running.
+    ```bash
+    kubectl apply -f prometheus_config.yaml
+    ```
  - use the hostname:port to access Grafana.
  - use promql queries to access prometheus data and add it to your custom dashboards. 
