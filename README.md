@@ -14,6 +14,9 @@ A real-time news analytics system that fetches data from a news API, performs se
 
 This project aims to provide a real-time news analytics pipeline that continuously collects and processes news data, extracts relevant information, and stores it for further analysis. The processed data is ingested into Azure Cosmos DB, and the project is containerized using Docker and orchestrated using Kubernetes. The included Prometheus and Grafana integration enables monitoring and visualization of the system's performance.
 
+## Workflow
+![alt text](workflow.png)
+
 ## Features
 
 - Fetch news data from a news API in real-time.
